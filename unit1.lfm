@@ -1,0 +1,317 @@
+object Form1: TForm1
+  Left = 392
+  Height = 733
+  Top = 579
+  Width = 1227
+  Caption = 'Form1'
+  ClientHeight = 733
+  ClientWidth = 1227
+  OnCreate = FormCreate
+  LCLVersion = '1.6.0.4'
+  object DBGrid1: TDBGrid
+    Left = 8
+    Height = 264
+    Top = 8
+    Width = 1400
+    Align = alCustom
+    AutoAdvance = aaRight
+    AutoFillColumns = True
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'id_cheloveka'
+        Width = 170
+        FieldName = 'id_cheloveka'
+      end    
+      item
+        Title.Caption = 'papa'
+        Width = 170
+        FieldName = 'papa'
+      end    
+      item
+        Title.Caption = 'Jena1'
+        Width = 170
+        FieldName = 'Jena1'
+      end    
+      item
+        Title.Caption = 'jena2'
+        Width = 170
+        FieldName = 'jena2'
+      end    
+      item
+        Title.Caption = 'rebenok1'
+        Width = 170
+        FieldName = 'rebenok1'
+      end    
+      item
+        Title.Caption = 'rebenok2'
+        Width = 170
+        FieldName = 'rebenok2'
+      end    
+      item
+        Title.Caption = 'rebenok3'
+        Width = 170
+        FieldName = 'rebenok3'
+      end    
+      item
+        Title.Caption = 'rebenok4'
+        Width = 177
+        FieldName = 'rebenok4'
+      end>
+    DataSource = DataSource1
+    Enabled = False
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 429
+    Height = 72
+    Top = 472
+    Width = 336
+    Caption = 'Поиск родителей'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -27
+    Font.Name = 'Segoe Script'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 1136
+    Height = 40
+    Top = 367
+    Width = 216
+    Caption = 'Показать дерево'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Segoe Script'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Button2Click
+    ParentFont = False
+    TabOrder = 2
+  end
+  object CheckBox1: TCheckBox
+    Left = 55
+    Height = 37
+    Top = 288
+    Width = 110
+    Caption = 'Ребенок1'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+  end
+  object CheckBox2: TCheckBox
+    Left = 56
+    Height = 35
+    Top = 367
+    Width = 109
+    Caption = 'Ребенок2'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Segoe Script'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
+  end
+  object CheckBox3: TCheckBox
+    Left = 656
+    Height = 35
+    Top = 296
+    Width = 109
+    Caption = 'Ребенок3'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Segoe Script'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+  end
+  object CheckBox4: TCheckBox
+    Left = 656
+    Height = 35
+    Top = 368
+    Width = 109
+    Caption = 'Ребенок4'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Segoe Script'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+  end
+  object Edit1: TEdit
+    Left = 232
+    Height = 39
+    Top = 296
+    Width = 296
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Segoe Script'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 7
+  end
+  object Edit2: TEdit
+    Left = 232
+    Height = 39
+    Top = 368
+    Width = 296
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Segoe Script'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 8
+  end
+  object Edit3: TEdit
+    Left = 800
+    Height = 39
+    Top = 296
+    Width = 296
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Segoe Script'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 9
+  end
+  object Edit4: TEdit
+    Left = 800
+    Height = 39
+    Top = 368
+    Width = 296
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Segoe Script'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 10
+  end
+  object Button3: TButton
+    Left = 1136
+    Height = 39
+    Top = 296
+    Width = 216
+    Caption = 'Очистить поиск'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Segoe Script'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Button3Click
+    ParentFont = False
+    TabOrder = 11
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    left = 208
+    top = 632
+  end
+  object SQLQuery1: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = 'id_cheloveka'
+        DataType = ftAutoInc
+        Precision = -1
+      end    
+      item
+        Name = 'papa'
+        DataType = ftString
+        Precision = -1
+        Size = 150
+      end    
+      item
+        Name = 'Jena1'
+        DataType = ftString
+        Precision = -1
+        Size = 150
+      end    
+      item
+        Name = 'jena2'
+        DataType = ftString
+        Precision = -1
+        Size = 150
+      end    
+      item
+        Name = 'rebenok1'
+        DataType = ftString
+        Precision = -1
+        Size = 150
+      end    
+      item
+        Name = 'rebenok2'
+        DataType = ftString
+        Precision = -1
+        Size = 150
+      end    
+      item
+        Name = 'rebenok3'
+        DataType = ftString
+        Precision = -1
+        Size = 150
+      end    
+      item
+        Name = 'rebenok4'
+        DataType = ftString
+        Precision = -1
+        Size = 150
+      end>
+    Active = True
+    Database = MySQL55Connection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'select * from ludi;'
+    )
+    Options = []
+    Params = <>
+    DataSource = DataSource1
+    left = 80
+    top = 632
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = True
+    Database = MySQL55Connection1
+    Options = []
+    left = 144
+    top = 632
+  end
+  object MySQL55Connection1: TMySQL55Connection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = 'drevo'
+    KeepConnection = False
+    Password = '123'
+    Transaction = SQLTransaction1
+    UserName = 'root'
+    CharSet = 'utf8'
+    HostName = 'localhost'
+    Options = []
+    left = 8
+    top = 632
+  end
+end
